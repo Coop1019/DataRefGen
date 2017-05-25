@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/main.cpp
+iostream
+-
+string
+-
+
