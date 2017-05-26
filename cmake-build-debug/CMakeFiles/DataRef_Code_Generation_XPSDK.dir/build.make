@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\s-4036711\Documents\CLion 2016.2.2\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files (x86)\JetBrains\CLion 2016.1\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\s-4036711\Documents\CLion 2016.2.2\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files (x86)\JetBrains\CLion 2016.1\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen"
+CMAKE_SOURCE_DIR = "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DataRef_Code_Generation_XPSDK.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/DataRef_Code_Generation_XPSDK.dir/flags.make
 
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.obj: CMakeFiles/DataRef_Code_Generation_XPSDK.dir/flags.make
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.obj"
-	C:\Users\S-4036~1\Dropbox\School\Other\SATELL~1\MinGW\bin\G__~1.EXE   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataRef_Code_Generation_XPSDK.dir\main.cpp.obj -c "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataRef_Code_Generation_XPSDK.dir\main.cpp.obj -c "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\main.cpp"
 
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.i"
-	C:\Users\S-4036~1\Dropbox\School\Other\SATELL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\main.cpp" > CMakeFiles\DataRef_Code_Generation_XPSDK.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\main.cpp" > CMakeFiles\DataRef_Code_Generation_XPSDK.dir\main.cpp.i
 
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.s"
-	C:\Users\S-4036~1\Dropbox\School\Other\SATELL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\main.cpp" -o CMakeFiles\DataRef_Code_Generation_XPSDK.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\main.cpp" -o CMakeFiles\DataRef_Code_Generation_XPSDK.dir\main.cpp.s
 
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/main.cpp.obj.requires:
 
@@ -92,7 +92,7 @@ DataRef_Code_Generation_XPSDK.exe: CMakeFiles/DataRef_Code_Generation_XPSDK.dir/
 DataRef_Code_Generation_XPSDK.exe: CMakeFiles/DataRef_Code_Generation_XPSDK.dir/linklibs.rsp
 DataRef_Code_Generation_XPSDK.exe: CMakeFiles/DataRef_Code_Generation_XPSDK.dir/objects1.rsp
 DataRef_Code_Generation_XPSDK.exe: CMakeFiles/DataRef_Code_Generation_XPSDK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DataRef_Code_Generation_XPSDK.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DataRef_Code_Generation_XPSDK.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataRef_Code_Generation_XPSDK.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/DataRef_Code_Generation_XPSDK.dir/clean:
 .PHONY : CMakeFiles/DataRef_Code_Generation_XPSDK.dir/clean
 
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen" "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen" "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug" "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug" "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles\DataRef_Code_Generation_XPSDK.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen" "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen" "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug" "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug" "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles\DataRef_Code_Generation_XPSDK.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/DataRef_Code_Generation_XPSDK.dir/depend
 

@@ -1,3 +1,3 @@
-"C:\Users\s-4036711\Documents\CLion 2016.2.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\DataRef_Code_Generation_XPSDK.dir/objects.a
-C:\Users\S-4036~1\Dropbox\School\Other\SATELL~1\MinGW\bin\ar.exe cr CMakeFiles\DataRef_Code_Generation_XPSDK.dir/objects.a @CMakeFiles\DataRef_Code_Generation_XPSDK.dir\objects1.rsp
-C:\Users\S-4036~1\Dropbox\School\Other\SATELL~1\MinGW\bin\G__~1.EXE  -g   -Wl,--whole-archive CMakeFiles\DataRef_Code_Generation_XPSDK.dir/objects.a -Wl,--no-whole-archive  -o DataRef_Code_Generation_XPSDK.exe -Wl,--out-implib,libDataRef_Code_Generation_XPSDK.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DataRef_Code_Generation_XPSDK.dir\linklibs.rsp
+"C:\Program Files (x86)\JetBrains\CLion 2016.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\DataRef_Code_Generation_XPSDK.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\DataRef_Code_Generation_XPSDK.dir/objects.a @CMakeFiles\DataRef_Code_Generation_XPSDK.dir\objects1.rsp
+C:\MinGW\bin\g++.exe  -g   -Wl,--whole-archive CMakeFiles\DataRef_Code_Generation_XPSDK.dir/objects.a -Wl,--no-whole-archive  -o DataRef_Code_Generation_XPSDK.exe -Wl,--out-implib,libDataRef_Code_Generation_XPSDK.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DataRef_Code_Generation_XPSDK.dir\linklibs.rsp

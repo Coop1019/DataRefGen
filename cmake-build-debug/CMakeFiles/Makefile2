@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\s-4036711\Documents\CLion 2016.2.2\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files (x86)\JetBrains\CLion 2016.1\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\s-4036711\Documents\CLion 2016.2.2\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files (x86)\JetBrains\CLion 2016.1\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen"
+CMAKE_SOURCE_DIR = "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug"
 
 #=============================================================================
 # Target rules for target CMakeFiles/DataRef_Code_Generation_XPSDK.dir
@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Adva
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/all:
 	$(MAKE) -f CMakeFiles\DataRef_Code_Generation_XPSDK.dir\build.make CMakeFiles/DataRef_Code_Generation_XPSDK.dir/depend
 	$(MAKE) -f CMakeFiles\DataRef_Code_Generation_XPSDK.dir\build.make CMakeFiles/DataRef_Code_Generation_XPSDK.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target DataRef_Code_Generation_XPSDK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target DataRef_Code_Generation_XPSDK"
 .PHONY : CMakeFiles/DataRef_Code_Generation_XPSDK.dir/all
 
 # Include target in all.
@@ -75,9 +75,9 @@ all: CMakeFiles/DataRef_Code_Generation_XPSDK.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/DataRef_Code_Generation_XPSDK.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\s-4036711\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\coope\Dropbox\XPlane Stuff\Custom Aircraft\Advanced Flight Modeling\Resources\Code Systems\DataRef Gen\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/DataRef_Code_Generation_XPSDK.dir/rule
 
 # Convenience name for target.

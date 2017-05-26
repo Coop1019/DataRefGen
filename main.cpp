@@ -5,6 +5,9 @@ using namespace std;
 
 
 int main() {
+
+    int contLoop = 1;
+    while (contLoop != 0){
     int typeOfDref;
     string baseSignature = "afm";
     string baseAircraft = "m20r";
@@ -45,28 +48,33 @@ int main() {
     combo = combo + specificCap;
     comboLowerFirst = combo;
     comboLowerFirst[0]=tolower(comboLowerFirst[0]);
-    switch (typeOfDref){
+    switch (typeOfDref) {
         default:
             cout << "Error" << endl;
             break;
         case 0:
             cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
             cout << specific << " - Int" << endl;
             cout << "XPLMDataRef " << comboLowerFirst << "DataRef = NULL;" << endl;
             cout << "int " << comboLowerFirst << " = 0;" << endl;
             cout << "int get" << combo << "DRCB (void* inRefcon) { return " << comboLowerFirst << "; }" << endl;
-            cout << "void set" << combo << "DRCB (void* inRefcon, int outValue) { " << comboLowerFirst << " = outValue;}" << endl;
+            cout << "void set" << combo << "DRCB (void* inRefcon, int outValue) { " << comboLowerFirst
+                 << " = outValue;}" << endl;
 
             cout << endl;
             cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
             cout << specific << " - Int" << endl;
-            cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
-            cout << specific <<"\", xplmType_Int, 1, get" << combo << "DRCB, set" << combo << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)" << endl;
-            cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";} cout << specific << "\");" << endl;
+            cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft
+                 << "/" << category << "/" << topic << "/";
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
+            cout << specific << "\", xplmType_Int, 1, get" << combo << "DRCB, set" << combo
+                 << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
+            cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/"
+                 << category << "/" << topic << "/";
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
+            cout << specific << "\");" << endl;
             cout << "XPLMSetDatai(" << comboLowerFirst << "DataRef, 0);" << endl;
 
             cout << endl;
@@ -74,48 +82,64 @@ int main() {
             break;
         case 1:
             cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
             cout << specific << " - Double" << endl;
             cout << "XPLMDataRef " << comboLowerFirst << "DataRef = NULL;" << endl;
             cout << "double " << comboLowerFirst << " = 0;" << endl;
             cout << "double get" << combo << "DRCB (void* inRefcon) { return " << comboLowerFirst << "; }" << endl;
-            cout << "void set" << combo << "DRCB (void* inRefcon, double outValue) { " << comboLowerFirst << " = outValue;}" << endl;
+            cout << "void set" << combo << "DRCB (void* inRefcon, double outValue) { " << comboLowerFirst
+                 << " = outValue;}" << endl;
 
             cout << endl;
             cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
             cout << specific << " - Double" << endl;
-            cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
-            cout << specific <<"\", xplmType_Double, 1, " << "NULL, NULL, NULL, NULL, get" << combo << "DRCB, set" << combo << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
-            cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";} cout << specific << "\");" << endl;
+            cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft
+                 << "/" << category << "/" << topic << "/";
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
+            cout << specific << "\", xplmType_Double, 1, " << "NULL, NULL, NULL, NULL, get" << combo << "DRCB, set"
+                 << combo << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
+            cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/"
+                 << category << "/" << topic << "/";
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
+            cout << specific << "\");" << endl;
             cout << "XPLMSetDatai(" << comboLowerFirst << "DataRef, 0);" << endl;
 
             cout << endl;
             cout << "XPLMUnregisterDataAccessor(" << comboLowerFirst << "DataRef);" << endl;
+            break;
+
         case 2:
             cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
             cout << specific << " - Float" << endl;
             cout << "XPLMDataRef " << comboLowerFirst << "DataRef = NULL;" << endl;
             cout << "float " << comboLowerFirst << " = 0;" << endl;
             cout << "float get" << combo << "DRCB (void* inRefcon) { return " << comboLowerFirst << "; }" << endl;
-            cout << "void set" << combo << "DRCB (void* inRefcon, float outValue) { " << comboLowerFirst << " = outValue;}" << endl;
+            cout << "void set" << combo << "DRCB (void* inRefcon, float outValue) { " << comboLowerFirst
+                 << " = outValue;}" << endl;
 
             cout << endl;
             cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
             cout << specific << " - Float" << endl;
-            cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";}
-            cout << specific <<"\", xplmType_Double, 1, " << "NULL, NULL, get" << combo << "DRCB, set" << combo << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
-            cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-            if (hasDescriptor != 0) { cout << descriptor << "/";} cout << specific << "\");" << endl;
+            cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft
+                 << "/" << category << "/" << topic << "/";
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
+            cout << specific << "\", xplmType_Double, 1, " << "NULL, NULL, get" << combo << "DRCB, set" << combo
+                 << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
+            cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/"
+                 << category << "/" << topic << "/";
+            if (hasDescriptor != 0) { cout << descriptor << "/"; }
+            cout << specific << "\");" << endl;
             cout << "XPLMSetDatai(" << comboLowerFirst << "DataRef, 0);" << endl;
 
             cout << endl;
             cout << "XPLMUnregisterDataAccessor(" << comboLowerFirst << "DataRef);" << endl;
+            break;
+
+        cin >> contLoop;
+    }
 
 
 

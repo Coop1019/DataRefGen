@@ -8,84 +8,84 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
+				<Option working_dir="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DataRef_Code_Generation_XPSDK">
-				<Option output="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/DataRef_Code_Generation_XPSDK.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
+				<Option output="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/DataRef_Code_Generation_XPSDK.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../include"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include-fixed"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../mingw32/include"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataRef_Code_Generation_XPSDK"/>
-					<CompileFile command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataRef_Code_Generation_XPSDK"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DataRef_Code_Generation_XPSDK/fast">
-				<Option output="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/DataRef_Code_Generation_XPSDK.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
+				<Option output="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/DataRef_Code_Generation_XPSDK.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../include"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include-fixed"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../mingw32/include"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
-					<Add directory="c:\users\s-4036711\dropbox\school\other\satellite club\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataRef_Code_Generation_XPSDK/fast"/>
-					<CompileFile command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataRef_Code_Generation_XPSDK/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
+				<Option working_dir="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
+				<Option working_dir="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/S-4036~1/Dropbox/School/Other/SATELL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/main.cpp">
+		<Unit filename="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/main.cpp">
 			<Option target="DataRef_Code_Generation_XPSDK"/>
 		</Unit>
-		<Unit filename="C:/Users/s-4036711/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/CMakeLists.txt">
+		<Unit filename="C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
