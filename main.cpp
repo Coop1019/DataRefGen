@@ -51,7 +51,7 @@ int main() {
         string comboLowerFirst;
 
         combo = categoryCap + topicCap;
-        if (hasDescriptor != 0) { combo + descriptorCap; }
+        if (hasDescriptor != 0) { combo = combo + descriptorCap; }
         combo = combo + specificCap;
         comboLowerFirst = combo;
         comboLowerFirst[0]=tolower(comboLowerFirst[0]);
