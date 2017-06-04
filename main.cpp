@@ -175,7 +175,7 @@ int main() {
                 cin >> valInDR;
                 cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific << " - Int Array" << endl;
                 cout << "XPLMDataRef " << comboLowerFirst << "DataRef = NULL;" << endl;
-                cout << "int " << comboLowerFirst << "[" << valInDR << "] = { "; for (int x=valInDR; x>0; x--){ cout << "0, ";} cout << "};" << endl;
+                cout << "int " << comboLowerFirst << "[" << valInDR << "] = { "; for (int x=valInDR-1; x>0; x--){ cout << "0, ";} cout << "0};" << endl;
                 cout << "int get" << combo << "DRCB(void* inRefcon, int* outValues, int inOffset, int inMax) {" << endl;
                     cout << "int n, r;" << endl;
                     cout << "if (outValues == NULL) { return " << valInDR << "; }" << endl;
@@ -195,7 +195,7 @@ int main() {
                 cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific;
                 cout <<"\", xplmType_IntArray, 1, NULL, NULL, NULL, NULL, NULL, NULL, get" << combo << "DRCB, set" << combo << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
                 cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific << "\");" << endl;
-                cout << "int " << comboLowerFirst << "DataRefInitVal[" << valInDR << "] = { "; for (int x=valInDR; x>0; x--){ cout << "0, ";} cout << "};" << endl;
+                cout << "int " << comboLowerFirst << "DataRefInitVal[" << valInDR << "] = { "; for (int x=valInDR-1; x>0; x--){ cout << "0, ";} cout << "0};" << endl;
                 cout << "XPLMSetDatavi(" << comboLowerFirst << "DataRef, &" << comboLowerFirst << "DataRefInitVal[0], 0, " << valInDR << ");" << endl << endl << endl;
 
 

@@ -11,4 +11,10 @@ iostream
 -
 string
 -
+ostream
+-
+fstream
+-
+ios
+-
 
