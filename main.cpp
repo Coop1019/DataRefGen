@@ -1,11 +1,14 @@
 #include <iostream>
 #include <string>
+#include <ostream>
+#include <fstream>
+#include <ios>
 
 using namespace std;
 
 
 int main() {
-
+    std::ofstream log("m20rdrefs.txt", std::ios_base::app | std::ios_base::out);
     int contLoop = 1;
     while (contLoop != 0){
         int typeOfDref;
@@ -18,7 +21,7 @@ int main() {
         string specific;
         string categoryCap;
 
-        cout << "Type of DataRef/ Command: (0 is int, 1 is double, 2 is float, 3 is command) " << endl;
+        cout << "Type of DataRef/ Command: (0 is int, 1 is double, 2 is float, 3 is command, 4 is int array) " << endl;
         cin >> typeOfDref;
         if (typeOfDref == 3){
             category = "cmd";
@@ -116,7 +119,8 @@ int main() {
                 cout << "XPLMSetDatai(" << comboLowerFirst << "DataRef, 0);" << endl;
 
                 cout << endl;
-                cout << "XPLMUnregisterDataAccessor(" << comboLowerFirst << "DataRef);" << endl;
+                cout << "XPLMUnregisterDataAccessor(" << comboLowerFirst << "DataRef);" << endl << endl;
+                cout << "XPLMSendMessageToPlugin(PluginID, MSG_ADD_DATAREF, (void*)\""<< baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific <<"\");" << endl;
                 break;
 
             case 2:
@@ -146,7 +150,8 @@ int main() {
                 cout << "XPLMSetDatai(" << comboLowerFirst << "DataRef, 0);" << endl;
 
                 cout << endl;
-                cout << "XPLMUnregisterDataAccessor(" << comboLowerFirst << "DataRef);" << endl;
+                cout << "XPLMUnregisterDataAccessor(" << comboLowerFirst << "DataRef);" << endl << endl;
+                cout << "XPLMSendMessageToPlugin(PluginID, MSG_ADD_DATAREF, (void*)\""<< baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific <<"\");" << endl;
                 break;
             case 3:
                 cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
@@ -163,12 +168,69 @@ int main() {
                 if (hasDescriptor != 0) { cout << descriptor << "/"; }
                 cout << specific << "\", \"DESCRIPTION GOES HERE\");" << endl;
                 cout << "XPLMRegisterCommandHandler(" << comboLowerFirst << "CMD, " << comboLowerFirst << "CMDCommandHandler, 1, (void *)0);" << endl;
+                break;
+            case 4:
+                int valInDR;
+                cout << "Values in Dataref:" << endl;
+                cin >> valInDR;
+                cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific << " - Int Array" << endl;
+                cout << "XPLMDataRef " << comboLowerFirst << "DataRef = NULL;" << endl;
+                cout << "int " << comboLowerFirst << "[" << valInDR << "] = { "; for (int x=valInDR; x>0; x--){ cout << "0, ";} cout << "};" << endl;
+                cout << "int get" << combo << "DRCB(void* inRefcon, int* outValues, int inOffset, int inMax) {" << endl;
+                    cout << "int n, r;" << endl;
+                    cout << "if (outValues == NULL) { return " << valInDR << "; }" << endl;
+                    cout << "r = " << valInDR <<" - inOffset;" << endl;
+                    cout << "if (r > inMax) { r = inMax; }" << endl;
+                    cout << "for (n = 0; n < r; n++) { outValues[n] = " << comboLowerFirst << "[n + inOffset]; }" << endl;
+                    cout << "return r;" << endl << "}" << endl;
+                cout << "void set" << combo << "DRCB(void * inRefcon, int * inValues, int inOffset, int inCount) {" << endl;
+                        cout << "int n, r;" << endl;
+                        cout << "r = " << valInDR << " - inOffset;" << endl;
+                        cout << "if (r > inCount) { r = inCount; }" << endl;
+                        cout << "for (n = 0; n < r; n++) { " << comboLowerFirst <<"[n + inOffset] = inValues[n]; }" << endl;
+                        cout << "}" << endl << endl << endl;
+
+
+                cout << "// " << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific << " - Int Array" << endl;
+                cout << comboLowerFirst << "DataRef = XPLMRegisterDataAccessor(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific;
+                cout <<"\", xplmType_IntArray, 1, NULL, NULL, NULL, NULL, NULL, NULL, get" << combo << "DRCB, set" << combo << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
+                cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific << "\");" << endl;
+                cout << "int " << comboLowerFirst << "DataRefInitVal[" << valInDR << "] = { "; for (int x=valInDR; x>0; x--){ cout << "0, ";} cout << "};" << endl;
+                cout << "XPLMSetDatavi(" << comboLowerFirst << "DataRef, &" << comboLowerFirst << "DataRefInitVal[0], 0, " << valInDR << ");" << endl << endl << endl;
+
+
+                cout << "XPLMUnregisterDataAccessor(" << comboLowerFirst << "DataRef);" << endl << endl;
+                cout << "XPLMSendMessageToPlugin(PluginID, MSG_ADD_DATAREF, (void*)\""<< baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/"; if (hasDescriptor != 0) { cout << descriptor << "/"; } cout << specific <<"\");" << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 break;
-        }
 
-            cin >> contLoop;;
+        }
+        log << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
+        if (hasDescriptor != 0) { cout << descriptor << "/"; }
+        cout << specific << " - Command" << endl;
+        cin >> contLoop;;
     }
     return 0;
 }
