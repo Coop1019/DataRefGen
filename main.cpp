@@ -141,7 +141,7 @@ int main() {
                      << baseAircraft
                      << "/" << category << "/" << topic << "/";
                 if (hasDescriptor != 0) { cout << descriptor << "/"; }
-                cout << specific << "\", xplmType_Double, 1, " << "NULL, NULL, get" << combo << "DRCB, set" << combo
+                cout << specific << "\", xplmType_Float, 1, " << "NULL, NULL, get" << combo << "DRCB, set" << combo
                      << "DRCB, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);" << endl;
                 cout << comboLowerFirst << "DataRef = XPLMFindDataRef(\"" << baseSignature << "/" << baseAircraft << "/"
                      << category << "/" << topic << "/";
@@ -205,31 +205,11 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 break;
 
         }
         log << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
         if (hasDescriptor != 0) { cout << descriptor << "/"; }
-        cout << specific << " - Command" << endl;
         cin >> contLoop;;
     }
     return 0;
