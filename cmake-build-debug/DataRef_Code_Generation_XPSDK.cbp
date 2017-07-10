@@ -24,13 +24,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include-fixed"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../mingw32/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataRef_Code_Generation_XPSDK"/>
@@ -46,13 +46,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include-fixed"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/../../../../mingw32/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.9.3/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/coope/Dropbox/XPlane Stuff/Custom Aircraft/Advanced Flight Modeling/Resources/Code Systems/DataRef Gen/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataRef_Code_Generation_XPSDK/fast"/>
