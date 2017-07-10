@@ -10,54 +10,79 @@ using namespace std;
 int main() {
     std::ofstream log("m20rdrefs.txt", std::ios_base::app | std::ios_base::out);
     int contLoop = 1;
-    while (contLoop != 0){
-        int typeOfDref;
-        string baseSignature = "afm";
-        string baseAircraft = "m20r";
-        string category;
-        string topic;
-        int hasDescriptor; // 0 is no, yes is 1
-        string descriptor;
-        string specific;
-        string categoryCap;
+    float looper = 0;
+    int typeOfDref;
+    string baseSignature = "afm";
+    string baseAircraft = "m20r";
+    string category;
+    string topic;
+    int hasDescriptor; // 0 is no, yes is 1
+    string descriptor;
+    string specific;
+    string categoryCap;
+    string descriptorCap;
+    string combo;
+    string comboLowerFirst;
+    string topicCap = topic;
 
-        cout << "Type of DataRef/ Command: (0 is int, 1 is double, 2 is float, 3 is command, 4 is int array) " << endl;
-        cin >> typeOfDref;
-        if (typeOfDref == 3){
-            category = "cmd";
-            categoryCap = "Cmd";
+    while (contLoop != 0){
+
+
+
+        if (looper != 1) {
+
+            cout << "Type of DataRef/ Command: (0 is int, 1 is double, 2 is float, 3 is command, 4 is int array) "
+                 << endl;
+            cin >> typeOfDref;
+            if (typeOfDref == 3) {
+                category = "cmd";
+                categoryCap = "Cmd";
+            } else {
+                cout << "category:" << endl;
+                cin >> category;
+                categoryCap = category;
+                categoryCap[0] = toupper(categoryCap[0]);
+            }
+            cout << "topic" << endl;
+            cin >> topic;
+            topicCap[0] = toupper(topicCap[0]);
+            cout << "has descriptor?" << endl;
+            cin >> hasDescriptor;
+            if (hasDescriptor != 0) {
+                cin >> descriptor;
+                descriptorCap = descriptor;
+                descriptorCap[0] = toupper(descriptorCap[0]);
+            }
+            cout << "specific:" << endl;
+            cin >> specific;
+            string specificCap = specific;
+            specificCap[0] = toupper(specificCap[0]);
+
+
+
+            combo = categoryCap + topicCap;
+            if (hasDescriptor != 0) { combo = combo + descriptorCap; }
+            combo = combo + specificCap;
+            comboLowerFirst = combo;
+            comboLowerFirst[0] = tolower(comboLowerFirst[0]);
+
         }
-        else {
-            cout << "category:" << endl;
-            cin >> category;
-            categoryCap = category;
-            categoryCap[0] = toupper(categoryCap[0]);
-        }
-        cout << "topic" << endl;
-        cin >> topic;
-        string topicCap = topic;
-        topicCap[0] = toupper(topicCap[0]);
-        cout << "has descriptor?" << endl;
-        cin >> hasDescriptor;
-        string descriptorCap;
-        if (hasDescriptor != 0){
+        if (looper == 1){
+            cout << "descriptor" << endl;
             cin >> descriptor;
             descriptorCap = descriptor;
             descriptorCap[0] = toupper(descriptorCap[0]);
+
+            cout << "specific:" << endl;
+            cin >> specific;
+            string specificCap = specific;
+            specificCap[0] = toupper(specificCap[0]);
+
+            combo = categoryCap + topicCap + descriptorCap + specificCap;
+            comboLowerFirst = combo;
+            comboLowerFirst[0] = tolower(comboLowerFirst[0]);
+
         }
-        cout << "specific:" << endl;
-        cin >> specific;
-        string specificCap = specific;
-        specificCap[0] = toupper(specificCap[0]);
-
-        string combo;
-        string comboLowerFirst;
-
-        combo = categoryCap + topicCap;
-        if (hasDescriptor != 0) { combo = combo + descriptorCap; }
-        combo = combo + specificCap;
-        comboLowerFirst = combo;
-        comboLowerFirst[0]=tolower(comboLowerFirst[0]);
         switch (typeOfDref) {
             default:
                 cout << "Error" << endl;
@@ -208,9 +233,10 @@ int main() {
                 break;
 
         }
-        log << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
-        if (hasDescriptor != 0) { cout << descriptor << "/"; }
+        cout << endl << endl << endl << "Go Again? 5 to run Looper command and only change last 2 values" << endl;
         cin >> contLoop;;
+        if (contLoop == 5){looper=1;}
+        else {looper=0;}
     }
     return 0;
 }
