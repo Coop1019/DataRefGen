@@ -332,8 +332,8 @@ int main() {
                 startFile << comboLowerFirst << "CMD = XPLMCreateCommand(\"" << baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
                 if (hasDescriptor != 0) { startFile << descriptor << "/"; }
                 startFile << specific << "\", \"DESCRIPTION GOES HERE\");" << endl;
-                stopFile << "XPLMRegisterCommandHandler(" << comboLowerFirst << "CMD, " << comboLowerFirst << "CMDCommandHandler, 1, (void *)0);" << endl;
-                drefEditor << "XPLMSendMessageToPlugin(PluginID, MSG_ADD_DATAREF, (void*)\""<< baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
+                startFile << "XPLMRegisterCommandHandler(" << comboLowerFirst << "CMD, " << comboLowerFirst << "CMDCommandHandler, 1, (void *)0);" << endl;
+                // drefEditor << "XPLMSendMessageToPlugin(PluginID, MSG_ADD_DATAREF, (void*)\""<< baseSignature << "/" << baseAircraft << "/" << category << "/" << topic << "/";
                 if (hasDescriptor != 0) { drefEditor << descriptor << "/"; } drefEditor << specific <<"\");" << endl;
 
                 break;
